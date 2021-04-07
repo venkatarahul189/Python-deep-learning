@@ -57,6 +57,6 @@ svc = SVC(kernel='linear')
 #Here i used svc classifier to fit the data
 svc.fit(X_train_tfidf, twenty_train.target)
 #here i take k nearest to use the data and classify the data points
-acc_knn = round(svc.score(X_train_tfidf, twenty_train.target) * 100, 3)
+acc_knn = round(svc.score(X_train_tfidf, twenty_train.target) * 100, 3) 
 #here i loaded the knn classifier
 print("SVM accuracy is:", acc_knn / 100)
